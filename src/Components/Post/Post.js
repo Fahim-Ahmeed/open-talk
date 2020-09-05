@@ -6,6 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { Link } from 'react-router-dom';
+import './Post.css';
 
 const useStyles = makeStyles({
     root: {
@@ -17,7 +18,7 @@ const useStyles = makeStyles({
         transform: 'scale(0.8)',
     },
     title: {
-        fontSize: 14,
+        fontSize: 30,
     },
     pos: {
         marginBottom: 12,
@@ -35,9 +36,12 @@ const Post = (props) => {
     const bull = <span className={classes.bullet}>•</span>;
     return (
 
-        <div styles={{ backgroundColor:'lightgray'}}>
+        <div className="area">
             <Card className={classes.root} variant="outlined">
                 <CardContent>
+                    <Typography className={classes.title} color="textSecondary" gutterBottom>
+                       id:{id}
+                        </Typography>
                     <Typography variant="h5" component="h2">
                         {title}
                     </Typography>
@@ -48,13 +52,13 @@ const Post = (props) => {
                 </CardContent>
                 <CardActions>
                     {/* <Button size="small">Learn More</Button> */}
-                    <Link to={'/post/'+id}>
-                       <Button variant="contained" color="primary">
-                        view comments
+                    <Link to={'/post/' + id}>
+                        <Button variant="contained" color="primary">
+                            view comments
                         </Button>
                     </Link>
                 </CardActions>
-                
+
             </Card>
         </div>
 

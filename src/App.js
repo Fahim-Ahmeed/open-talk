@@ -9,7 +9,8 @@ import {
   Link
 } from "react-router-dom";
 import Home from './Components/Home/Home';
-import Comments from './Components/Comments/Comments';
+import PostDetails from './Components/PostDetails/PostDetails';
+
 
 
 function App() {
@@ -20,10 +21,7 @@ function App() {
       <Home></Home>
       </Route>
       <Route path="/post/:id">
-        <Link>
-        <Comments></Comments>
-        </Link>
-     
+        <PostDetails></PostDetails>
       </Route>
       <Route exact path="/">
       <Home></Home>
