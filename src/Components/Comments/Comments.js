@@ -3,7 +3,7 @@ import CommentArea from '../CommentArea/CommentArea';
 
 const Comments = (props) => {
     const postId=props.postId;
-    console.log(postId)
+    // console.log(postId)
 
     const[comments,setComments]=useState([]);
     useEffect(()=>{

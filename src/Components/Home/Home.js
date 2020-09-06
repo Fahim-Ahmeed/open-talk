@@ -16,7 +16,7 @@ const Home = () => {
         <div className="home">
             <Header></Header>
          {
-             post.map(post=><Post post={post}></Post>)
+             post.map(post=><Post post={post} key={post.id}></Post>)
          }
         </div>
         

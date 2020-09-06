@@ -28,7 +28,7 @@ const CommentArea = (props) => {
     const classes = useStyles();
     // console.log(props.comment)
     const{id,postId,email,body,name}=props.comment;
-    console.log(name)
+    // console.log(name)
     let number=Math.floor(Math.random()*99);
     return (
         <div>
@@ -48,7 +48,7 @@ const CommentArea = (props) => {
                 color="textPrimary"
               >
                   id:{`${id}   `} 
-                {/* Ali Connors */}
+              
               </Typography>
           <h5>email:{email}</h5>
               {body}

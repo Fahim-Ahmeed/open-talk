@@ -30,7 +30,7 @@ const useStyles = makeStyles({
 
 
 const Post = (props) => {
-    console.log(props.post);
+    // console.log(props.post);
     const { userId, title, id, body } = props.post;
     const classes = useStyles();
     const bull = <span className={classes.bullet}>•</span>;
@@ -52,13 +52,14 @@ const Post = (props) => {
                 </CardContent>
                 <CardActions>
                     {/* <Button size="small">Learn More</Button> */}
-                    <Link to={'/post/' + id}>
-                        <Button variant="contained" color="primary">
+                    <Link to={'/post/' + id} >
+                        {/* <Button variant="contained" color="primary">
                             view comments
-                        </Button>
+                        </Button> */}
+                        <Button size="small" className="button">View Comment</Button>
                     </Link>
                 </CardActions>
-
+                
             </Card>
         </div>
 
