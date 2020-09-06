@@ -15,10 +15,10 @@ const PostDetails = () => {
     return (
         <div className="total-area">
             <div className="post-area">
-                <h2>id:{post.id}</h2>
-                <h3>heading:{post.title}</h3>
-                <hr />
-                <h5>{post.body}</h5>
+                <h2 style={{fontFamily:'monospace'}}>id:{post.id}</h2>
+                <h3 style={{fontFamily:'Times'}}>{post.title}</h3>
+                <br/>
+                <h5 style={{fontFamily:'cursive'}}>{post.body}</h5>
                 <br/>
                 
             </div>

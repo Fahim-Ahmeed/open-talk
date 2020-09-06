@@ -39,10 +39,10 @@ const Post = (props) => {
         <div className="area">
             <Card className={classes.root} variant="outlined">
                 <CardContent>
-                    <Typography className={classes.title} color="textSecondary" gutterBottom>
+                    <Typography className={classes.title} color="textSecondary" style={{fontFamily:'inline'}} gutterBottom>
                        id:{id}
                         </Typography>
-                    <Typography variant="h5" component="h2">
+                    <Typography variant="h5" component="h2" style={{fontFamily:'unset'}}>
                         {title}
                     </Typography>
                     <br />
